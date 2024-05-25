@@ -13,7 +13,7 @@ interface FormValues {
   phoneNumber: string;
 }
 function UpdateUser() {
-  const { id } = useParams();
+  const { id }: any = useParams();
   const [initialValues, setInitialValues] = useState<FormValues | null>(null);
   const [user, setUser] = useState<User>();
   const navigate = useNavigate();
